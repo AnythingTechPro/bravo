@@ -9,3 +9,4 @@ Bravo.egg-info/*
 build/*
 dist/*
 .idea/
+server/*

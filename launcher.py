@@ -5,7 +5,7 @@ from twisted.scripts.twistd import run
 from bravo.service import service
 
 # A basic config with some decent defaults is dumped if one is not found
-config = """# For an excellent overview of what is possible here please take a 
+config = """# For an excellent overview of what is possible here please take a
 # losk at:
 # https://github.com/MostAwesomeDude/bravo/blob/master/bravo.ini.example
 
@@ -31,10 +31,8 @@ generators = simplex, grass, beaches, watertable, erosion, safety
 #interfaces = tcp:8080
 """
 
-# User's APPDATA folder
-appdata = os.path.expandvars("%APPDATA%")
 # Bravo config folder
-bravo_dir = os.path.join(appdata, "bravo")
+bravo_dir = "server"
 # Additional site-packages path
 addons = os.path.join(bravo_dir, "addons")
 # Actual plugin folder (so the user doesn't have to maually create it)
